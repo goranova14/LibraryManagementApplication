@@ -1,0 +1,56 @@
+﻿@page
+@model WebApplication2.Pages.SignUpModel
+@{
+
+    Layout = "_Layout2";
+    
+}
+
+
+<body class="text-center">
+
+    <main class="form-signin w-100 m-auto">
+        <form method="post"> 
+            <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+            
+            <div class="form-floating">
+                <input asp-for=Person.Password type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <span asp-validation-for="Person.Password"></span>
+
+                <label asp-for="Person.Password" type="password">Password</label>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Person.Username" type="text" class="form-control" id="floatingUsername" placeholder="Username" required>
+                <span asp-validation-for="Person.Username"></span>
+
+                <label asp-for="Person.Username" for="floatingUsername">Username</label>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Person.Address" type="text" class="form-control" id="floatingAddress" placeholder="Address" required>
+                <span asp-validation-for="Person.Address"></span>
+
+                <label asp-for="Person.Address" type="floatingAddress">City</label>
+            </div>
+            
+            <div class="form-floating">
+                <input asp-for="Person.Name" type="text" class="form-control" id="floatingFirstName" placeholder="First name" required>
+                <span asp-validation-for="Person.Name"></span>
+
+                <label asp-for="Person.Name" for="floatingFirstName">First name</label>
+            </div>
+            <div class="form-floating"> 
+                <input asp-for="Person.SurName" type="text" class="form-control" id="floatingLastName" placeholder="Last name" required>
+                <span asp-validation-for="Person.SurName"></span>
+                <label asp-for="Person.SurName" for="floatingLastName">Last name</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+
+        </form>
+    </main>
+    <p>@ViewData["Message"]</p>
+
+</body>
+    @section Scripts{
+        <partial name="_ValidationScriptsPartial" />
+    }

@@ -1,0 +1,180 @@
+﻿@page
+@model WebApplication2.Pages.HomePageAModel
+@{
+    Layout = "_Layout";
+
+    <style>
+       
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+	<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Carousel Template · Bootstrap v5.2</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/" />
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/css/HomePageA.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+<header>
+ 
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <p>Online Library Management system which helps you to control your library profile. </p>
+            <p><a class="btn btn-lg btn-primary" href="#">See your requests</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+           <p>Find the books that you have always dremaed to have on your shelf.</p>
+            <p><a class="btn btn-lg btn-primary" asp-page="/Books">View all books</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+         
+            <p>Not only you can have book, but from now on you can purchase a DVD as well.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">View all DVDs</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">"It ends with us" <span class="text-muted">Colleen Hoover</span></h2>
+                    <p class="lead">Lily hasn't always had it easy, but that's never stopped her from working hard for the life she wants.
+                    She's come a long way from the small town where she grew up--she graduated from college, moved to Boston, and started 
+                    her own business. And when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily's life
+                    seems too good to be true.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    width="500" height="500" aria-label="Placeholder: 500x500"
+                         preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="/css/images/itEndsWithUs.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">"Read people like a book" <span class="text-muted">Patrick King</span></h2>
+                    <p class="lead">Speed ​​read people, decipher body language, detect lies, and understand human nature.
+                       Is it possible to analyze people without them saying a word? Yes, it is. Learn how to become a “mind reader” and forge deep connections.
+                       How to get inside people's heads without them knowing. Read People Like a Book
+                       isn't a normal book on body language or facial expressions. Yes, it includes all
+                       of those things, as well as new techniques on how to truly detect lies in your everyday life, but this book
+                       is more about understanding human psychology and nature. We are who we are because of our experiences and pasts,
+                       and this guides our habits and behaviors more than anything else. Parts of this book read like the most interesting 
+                       and applicable psychology textbook you've ever read. Take a look inside yourself and others!
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+                    width="500" height="500" xmlns="" role="img" aria-label="Placeholder: 500x500"
+                         preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="/css/images/readPeopleLikeABook.jpg" width="500" height="500" />
+                    </svg>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Red, White & Royal Blue <span class="text-muted">Casey McQuiston</span></h2>
+                    <p class="lead">What happens when America's First Son falls in love with the Prince of Wales? When his mother became President, 
+                    Alex Claremont-Diaz was promptly cast as the American equivalent of a young royal. Handsome, charismatic, genius--his image is 
+                    pure millennial-marketing gold for the White House. There's only one problem: Alex has a beef with the actual prince, Henry,
+                    across the pond. And when the tabloids get hold of a photo involving an Alex-Henry altercation, US/British relations take a
+                    turn for the worse.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    width="500" height="500" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image href="/css/images/red,white,blue.jpg" width="500" height="500" />
+                    </svg>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+  <footer class="container">
+    <p>opopopop</p>
+  </footer>
+</main>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+}

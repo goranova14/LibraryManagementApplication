@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/loginPage.css" asp-append-version="true" />
+
+
+
+</head>
+<body>
+    <div class="header">
+    <img class="mb-4" src="~/css//images/logo.png" alt="" width="292" height="67">
+    <a asp-page="/SignUp" class="btn btn-primary">Sign up</a>
+    </div>
+    <div class="container">
+           <p2>Welcome</p2><br />
+           <p3>to Library Management System</p3>
+        <main role="main" class="pb-3">
+            
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <p>
+            "I've often said that the best lines of computer code are like poetry. The writer struggles to compress so much thought and feeling into the fewest lines possible while still communicating the fullness of expression."
+
+
+           - Satya Nadella
+        </p>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

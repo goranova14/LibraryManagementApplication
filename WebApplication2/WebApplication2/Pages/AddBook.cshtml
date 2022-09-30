@@ -1,0 +1,105 @@
+﻿@page
+@model WebApplication2.Pages.AddItemModel
+@{
+    }
+
+
+    <head>
+      
+           <link href="form-validation.css" rel="stylesheet">
+    </head>
+   
+    <body class="bg-light">
+           
+       
+      <main>
+           
+         <div class="row g-5">
+             
+             <div class="col-md-7 col-lg-8">
+               <h4 class="mb-3">Book details</h4>
+               <form method="POST">
+                   <fieldset>
+                 <div class="row g-3">
+                    
+                   <div class="col-sm-6">
+                       <label asp-for="Book.Title" class="form-label">Title</label>
+                       <input asp-for="Book.Title" type="text" class="form-control" id="title" required>
+                       <div class="invalid-feedback">
+                           Valid title is required.
+                       </div>
+                   </div>
+               <div class="col-sm-6">
+                   <label asp-for="Book.Author" class="form-label">Author</label>
+                   <input asp-for="Book.Author" type="text" class="form-control" id="studio" required>
+                   <div class="invalid-feedback">
+                       Valid author name is required.
+                   </div>
+               </div>
+                   <div class="col-sm-6">
+                     <label asp-for="Book.Publisher" for="Publisher" class="form-label">Publisher</label>
+                     <input asp-for="Book.Publisher" type="text" class="form-control" id="publisher" required>
+                     <div class="invalid-feedback">
+                       Valid publisher name is required.
+                     </div>
+                   </div>
+               <div class="col-sm-6">
+                   <label asp-for="Book.Pages" for="Pages" class="form-label">Pages</label>
+                   <input asp-for="Book.Pages" type="text" class="form-control" id="pages" required>
+                   <div class="invalid-feedback">
+                       Valid number of pages is required.
+                   </div>
+               </div>
+                     <div>
+                         <label asp-for="Book.Description">Description:</label>
+                         <span asp-validation-for="Book.Description"></span>
+                         <textarea asp-for="Book.Description" rows="4" cols="50">
+                           Your description here...
+                          </textarea>
+                     </div>
+                   </div>
+                   <div class="col-md-5">
+                     <label asp-for="Book.Genre" for="genre" class="form-label">Genre</label>
+                     <select asp-for="Book.Genre" class="form-select" id="genre" required>
+                       <option value="">Choose...</option>
+                       <option>Romance</option>
+                       <option>Horror</option>
+                       <option>Comedy</option>
+                       <option>Fiction</option>
+                       <option>Triller</option>
+                       <option>Sci-fi</option>
+                       <option>Cooking</option>
+                       <option>Educational</option>
+                     </select>
+                     <div class="invalid-feedback">
+                       Please select a valid genre.
+                     </div>
+                   </div>
+              
+                   <dl>
+                       <dt>
+                           @*<label asp-for="Book.Image"></label>*@
+                       </dt>
+                       <dd>
+                           @*<input asp-for="Book.Image" type="file">*@
+                       </dd>
+                   </dl>
+
+
+                 <input class="w-100 btn btn-primary btn-lg" value="Submit" class="submit" type="submit">Create item</input>
+
+                </fieldset>
+             </form>
+            </div>
+        </div>
+         
+         </main>
+       </>
+         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+             <script src="form-validation.js"></script>
+    <p>@ViewData["Message"]</p>
+    </body>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    }

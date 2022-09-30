@@ -1,0 +1,12 @@
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\bin\Debug\net6.0\LibraryBusiness.deps.json
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\bin\Debug\net6.0\LibraryBusiness.dll
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\bin\Debug\net6.0\LibraryBusiness.pdb
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\LibraryBusiness.csproj.AssemblyReference.cache
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\LibraryBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\LibraryBusiness.AssemblyInfoInputs.cache
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\LibraryBusiness.AssemblyInfo.cs
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\LibraryBusiness.csproj.CoreCompileInputs.cache
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\LibraryBusiness.dll
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\refint\LibraryBusiness.dll
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\LibraryBusiness.pdb
+C:\Users\denic\OneDrive\Desktop\sem2\WebApplication2\LibraryBusiness\obj\Debug\net6.0\ref\LibraryBusiness.dll
